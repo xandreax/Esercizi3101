@@ -11,12 +11,16 @@ public class WorkoutManager {
     private List<WorkoutEntry> workoutRepository;
 
     public WorkoutManager() {
-        this.workoutRepository = load("workouts.csv");
+        this.workoutRepository = new ArrayList<>();
     }
 
-    public List<WorkoutEntry> load(String csv) {
+    public void load(String csv) {
         List<String> workoutLines = Utils.readCsv(csv);
-        return convert(workoutLines);
+        workoutRepository=  convert(workoutLines);
+    }
+
+    public void load (DataLoader loader){
+        workoutRepository = convert(loader.load());
     }
 
     public void printLogs() {
