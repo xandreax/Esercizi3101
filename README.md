@@ -3,3 +3,4 @@
 * First exercise: Calculator
 * Second exercise: Library
 * Third exercise: Workout
+* Fourth exercise: Weather
