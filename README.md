@@ -1,4 +1,4 @@
 # Esercizi3101
 
-First exercise: Calculator
-Second exercise: Library
+* First exercise: Calculator
+* Second exercise: Library
