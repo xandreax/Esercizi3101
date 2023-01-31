@@ -60,6 +60,4 @@ public class Book implements Comparable {
         Book otherBook = (Book) o;
         return Integer.valueOf(otherBook.getYear()).compareTo(Integer.valueOf(this.getYear()));
     }
-
-
 }

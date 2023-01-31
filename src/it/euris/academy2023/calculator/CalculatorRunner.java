@@ -38,5 +38,4 @@ public class CalculatorRunner {
         calculator.div(40f, 3f);
 
     }
-
 }

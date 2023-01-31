@@ -16,10 +16,10 @@ public class WorkoutManager {
 
     public void load(String csv) {
         List<String> workoutLines = Utils.readCsv(csv);
-        workoutRepository=  convert(workoutLines);
+        workoutRepository = convert(workoutLines);
     }
 
-    public void load (DataLoader loader){
+    public void load(DataLoader loader) {
         workoutRepository = convert(loader.load());
     }
 

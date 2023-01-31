@@ -2,8 +2,6 @@ package it.euris.academy2023.workout;
 
 import it.euris.academy2023.utils.Utils;
 
-import java.util.List;
-
 public class WorkoutRunner {
 
     public static void main(String[] args) {
