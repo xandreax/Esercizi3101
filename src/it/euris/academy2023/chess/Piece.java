@@ -1,5 +1,7 @@
 package it.euris.academy2023.chess;
 
+import java.util.Objects;
+
 public abstract class Piece {
 
     protected int x;
@@ -25,5 +27,18 @@ public abstract class Piece {
 
     protected static boolean checkCoordinates(int x, int y) {
         return x >= 0 && x <= 7 && y >= 0 && y <= 7;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Piece piece = (Piece) o;
+        return x == piece.x && y == piece.y;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getClass().getName(), x, y);
     }
 }

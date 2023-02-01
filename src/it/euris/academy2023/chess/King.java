@@ -11,13 +11,4 @@ public class King extends Piece {
         return (x <= this.x + 1 && x >= this.x - 1) && (y <= this.y + 1 && y >= this.y - 1);
     }
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 }
