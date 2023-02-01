@@ -5,12 +5,12 @@ public class ChessRunner {
     public static void main(String[] args) {
 
         // test wrong initial coordinates
-        try {
+        /*try {
             Piece p1 = new Bishop(-3, -3);
         }
         catch (RuntimeException e){
             System.out.println(e.getMessage());
-        }
+        }*/
 
         Piece rook = new Rook(0, 0);
         Piece bishop = new Bishop(2, 0);
