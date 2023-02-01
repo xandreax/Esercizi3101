@@ -10,4 +10,14 @@ public class Bishop extends Piece {
     protected boolean validate(int x, int y) {
         return (x - this.x) == (y - this.y);
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

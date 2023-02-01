@@ -12,6 +12,19 @@ public class ChessRunner {
             System.out.println(e.getMessage());
         }*/
 
+        ChessBoard board = new ChessBoard();
+        board.add(new Rook(0, 0), p -> p.move(4,5)); //false
+        board.add(new Rook(0, 0), p -> p.move(0,5) && p.move(5,5)); //true
+
+        board.add(new Bishop(2, 0), p -> p.move(4,2)); //true
+        board.add(new Bishop(2,0), p -> p.move(6,4) && p.move(6,6)); //false
+
+        board.add(new King(4,0), p -> p.move(4,1) && p.move(4,2)); //true
+        board.add(new King(4,0), p -> p.move(6,2)); //false
+
+        board.startGame();
+
+        /*
         Piece rook = new Rook(0, 0);
         Piece bishop = new Bishop(2, 0);
         Piece king = new King(4, 0);
@@ -27,6 +40,7 @@ public class ChessRunner {
         System.out.println(king.move(4,1)); //true
         System.out.println(king.move(4,2)); // true
         System.out.println(king.move(6,2)); //false
+        */
 
     }
 }
