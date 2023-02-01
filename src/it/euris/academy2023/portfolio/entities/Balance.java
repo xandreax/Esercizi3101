@@ -27,7 +27,6 @@ public class Balance {
     @Override
     public String toString() {
         String s = "";
-        // pass the parameter to a xml line
         s += new XmlRow(TAG_BALANCE, mapBalanceValues()).render();
         s += financialInstrument;
         s += new XmlTag(TAG_BALANCE, true);

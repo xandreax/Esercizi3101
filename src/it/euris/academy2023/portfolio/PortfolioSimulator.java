@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PortfolioSimulator {
-    private List<Customer> customers;
+    private final List<Customer> customers;
 
     public PortfolioSimulator() {
         this.customers = new ArrayList<>();
@@ -17,8 +17,11 @@ public class PortfolioSimulator {
     }
 
     public void printXml() {
+        String result = "<customers>\n";
         for (Customer c : customers) {
-            System.out.println(c);
+            result += c;
         }
+        result += "</customers>\n";
+        System.out.println(result);
     }
 }

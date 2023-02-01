@@ -13,7 +13,7 @@ public class XmlTag {
     public String toString() {
         String s = "<";
         if (closure) {
-            s += "\\";
+            s += "/";
         }
         s += tag + ">\n";
         return s;
