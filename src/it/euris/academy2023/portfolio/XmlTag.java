@@ -12,7 +12,7 @@ public class XmlTag {
     @Override
     public String toString() {
         String s = "<";
-        if(closure){
+        if (closure) {
             s += "\\";
         }
         s += tag + ">\n";

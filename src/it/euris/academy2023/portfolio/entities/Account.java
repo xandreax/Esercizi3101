@@ -11,13 +11,15 @@ import java.util.Map;
 public class Account {
     private final static String TAG_ACCOUNT = "account";
     private final static String TAG_BALANCES = "account";
-    public enum BalanceType{
+
+    public enum BalanceType {
         DT("Deposito titoli"),
         CC("Conto corrente"),
         DR("Deposito risparmio");
 
         private String typeString;
-        BalanceType(String typeString){
+
+        BalanceType(String typeString) {
             this.typeString = typeString;
         }
 
@@ -36,7 +38,7 @@ public class Account {
         this.balances = new ArrayList<>();
     }
 
-    public void addBalance(Balance b){
+    public void addBalance(Balance b) {
         balances.add(b);
     }
 
@@ -57,7 +59,7 @@ public class Account {
         String s = "";
         s += new XmlRow(TAG_ACCOUNT, mapAccountValues()).render();
         s += new XmlTag(TAG_BALANCES, false);
-        for (Balance b: balances) {
+        for (Balance b : balances) {
             s += b;
         }
         s += new XmlTag(TAG_BALANCES, true);

@@ -8,7 +8,8 @@ import java.util.Map;
 
 public class FinancialInstrument {
     private final static String TAG_FINANCIAL_INSTRUMENT = "financialInstrument";
-    public enum FinancialInstrumentType{
+
+    public enum FinancialInstrumentType {
         EQY("Azione"),
         FND("Fondo"),
         BND("Obbligazione"),
@@ -25,6 +26,7 @@ public class FinancialInstrument {
             return type;
         }
     }
+
     private final String code;
     private final String description;
     private final float lastPrice;

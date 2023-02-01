@@ -13,7 +13,7 @@ public class PortfolioRunner {
         FinancialInstrument f2 = new FinancialInstrument("1235", "strumento2", 345.6f, "Italy", "Euro", FinancialInstrument.FinancialInstrumentType.CC);
         Balance b1 = new Balance(f1, 10);
         Balance b2 = new Balance(f2, 20);
-        Account ac = new Account("123", Account.BalanceType.DR );
+        Account ac = new Account("123", Account.BalanceType.DR);
         ac.addBalance(b1);
         ac.addBalance(b2);
         Customer c = new Customer("Mario", "Rossi", 1967, "MRORSS67E4GYT654");

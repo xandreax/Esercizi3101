@@ -22,7 +22,7 @@ public class Customer {
         this.accounts = new ArrayList<>();
     }
 
-    public void addAccount(Account a){
+    public void addAccount(Account a) {
         accounts.add(a);
     }
 
@@ -51,7 +51,7 @@ public class Customer {
         String s = "";
         s += new XmlRow(TAG_CUSTOMER, mapCustomerValues()).render();
         s += new XmlTag(TAG_ACCOUNTS, false);
-        for (Account ac: accounts) {
+        for (Account ac : accounts) {
             s += ac;
         }
         s += new XmlTag(TAG_ACCOUNTS, true);

@@ -12,11 +12,11 @@ public class PortfolioSimulator {
         this.customers = new ArrayList<>();
     }
 
-    public void add(Customer c){
+    public void add(Customer c) {
         customers.add(c);
     }
 
-    public void printXml(){
+    public void printXml() {
         for (Customer c : customers) {
             System.out.println(c);
         }
