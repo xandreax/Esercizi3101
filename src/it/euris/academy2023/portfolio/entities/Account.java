@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Account {
     private final static String TAG_ACCOUNT = "account";
-    private final static String TAG_BALANCES = "account";
+    private final static String TAG_BALANCES = "balances";
 
     public enum BalanceType {
         DT("Deposito titoli"),
