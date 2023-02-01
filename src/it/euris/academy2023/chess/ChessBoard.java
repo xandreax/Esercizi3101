@@ -11,11 +11,11 @@ public class ChessBoard {
         pieceBehaviorMap = new LinkedHashMap<>();
     }
 
-    public void add(Piece p, Behavior b){
+    public void add(Piece p, Behavior b) {
         pieceBehaviorMap.put(p, b);
     }
 
-    public void startGame(){
+    public void startGame() {
         for (Piece p : pieceBehaviorMap.keySet()) {
             System.out.println(pieceBehaviorMap.get(p).simulate(p));
         }
